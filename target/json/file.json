@@ -1,0 +1,188 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Verify if the user can navigate to www.amazon.com and create/edit the order(Mens hat)",
+        "description": "",
+        "id": "search-functionality;verify-if-the-user-can-navigate-to-www.amazon.com-and-create/edit-the-order(mens-hat)",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3006406485,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is navigate to chrome Browser",
+            "match": {
+              "location": "Openfeatures.user_is_navigate_to_chrome_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1207030943,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to URL as \"https://www.amazon.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.amazon.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "Openfeatures.user_navigates_to_URL_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 245377538,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "searches for product as \"hats for men\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hats for men\"",
+                  "offset": 24
+                }
+              ],
+              "location": "Openfeatures.searches_for_product_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2512200748,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clicks search button",
+            "match": {
+              "location": "Openfeatures.clicks_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3809234117,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicks the product",
+            "match": {
+              "location": "Openfeatures.clicks_the_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 266089925,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "selects quantity as 2 from the dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 20
+                }
+              ],
+              "location": "Openfeatures.selects_quantity_as_from_the_dropdown(Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1231334426,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clicks Add to Cart button",
+            "match": {
+              "location": "Openfeatures.clicks_Add_to_Cart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1704608799,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "clicks Go to cart button",
+            "match": {
+              "location": "Openfeatures.clicks_Go_to_cart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82398751,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "asserts that the total price and quantity",
+            "match": {
+              "location": "Openfeatures.asserts_that_the_total_price_and_quantity()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139259968,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "reduces the quantity from 2 to 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 26
+                },
+                {
+                  "val": "1",
+                  "offset": 31
+                }
+              ],
+              "location": "Openfeatures.reduces_the_quantity_from_to(Integer,Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2198641669,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "asserts that the total price and the qualtity is modified",
+            "match": {
+              "location": "Openfeatures.asserts_that_the_total_price_and_the_qualtity_is_modified()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC0001"
+          }
+        ]
+      }
+    ],
+    "name": "Search functionality",
+    "description": "",
+    "id": "search-functionality",
+    "keyword": "Feature",
+    "uri": "Features/search.feature",
+    "tags": []
+  }
+]
